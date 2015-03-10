@@ -10,7 +10,7 @@ All other tasks which do not implement the {@link SerialRunnable} will be execut
 getExecutor().execute(new ParallelAndSerialExecutor.SerialRunnable<String>() {
            @Override
            public String getIdentifier() {
-               return storyId;
+               return identifier;
            }
            public void run() {
                //Your task to run
@@ -26,3 +26,4 @@ getExecutor().execute(new Runnable() {
                }
            });
 ```
+
